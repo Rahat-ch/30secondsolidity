@@ -2,6 +2,7 @@ import React from 'react';
 
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Iframe from 'react-iframe';
 
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
@@ -20,6 +21,7 @@ type IPostProps = {
   modified_date: string;
   image: string;
   content: string;
+  ytube: string;
 };
 
 const DisplayPost = (props: IPostProps) => (
@@ -43,6 +45,14 @@ const DisplayPost = (props: IPostProps) => (
       <div
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: props.content }}
+      />
+      <Iframe
+        url={props.ytube}
+        width="100%"
+        height="100%"
+        id={props.title}
+        display="inline"
+        position="relative"
       />
     </Content>
   </Main>
@@ -70,8 +80,10 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
     'image',
     'content',
     'slug',
+    'ytube',
   ]);
   const content = await markdownToHtml(post.content || '');
+  console.log(post);
 
   return {
     props: {
@@ -81,6 +93,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
       modified_date: post.modified_date,
       image: post.image,
       content,
+      ytube: post.ytube,
     },
   };
 };

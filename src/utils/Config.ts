@@ -1,9 +1,9 @@
 export const Config = {
-  site_name: 'Starter',
-  title: 'Next.js Boilerplate',
-  description: 'Starter code for your Next.js blog Boilerplate with Tailwind CSS',
-  url: 'https://example.com',
+  site_name: '30SecondSolidity',
+  title: '30 Second Solidity',
+  description: 'Bite size Solidity lessons that are 30 seconds or more!',
+  url: 'https://www.30secondsolidity.com',
   locale: 'en',
-  author: 'Anonymous',
+  author: 'Rahat Chowdhury',
   pagination_size: 5,
 };

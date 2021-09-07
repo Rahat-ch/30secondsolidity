@@ -1,5 +1,5 @@
 {
-  "name": "next-js-boilerplate",
+  "name": "30secondsolidity",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -19,6 +19,7 @@
     "next-seo": "^4.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-iframe": "^1.8.0",
     "rehype-stringify": "^8.0.0",
     "remark-gfm": "^1.0.0",
     "remark-parse": "^9.0.0",
