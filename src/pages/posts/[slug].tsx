@@ -49,10 +49,11 @@ const DisplayPost = (props: IPostProps) => (
       <Iframe
         url={props.ytube}
         width="100%"
-        height="100%"
+        height="500px"
         id={props.title}
         display="inline"
         position="relative"
+        sandbox="allow-same-origin"
       />
     </Content>
   </Main>
@@ -83,7 +84,6 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
     'ytube',
   ]);
   const content = await markdownToHtml(post.content || '');
-  console.log(post);
 
   return {
     props: {
