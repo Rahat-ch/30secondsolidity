@@ -4,6 +4,6 @@ description: An overview of strings, console logs, and running code with Hardhat
 date: '2021-09-06'
 modified_date: '2021-09-06'
 image: /assets/images/posts/eth.jpg
-ytube: 'https://www.youtube.com/watch?v=sQboR6MdJWs'
+ytube: 'https://www.youtube.com/embed/sQboR6MdJWs'
 ---
 

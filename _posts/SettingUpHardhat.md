@@ -4,7 +4,7 @@ description: A quick 30 second tutorial on how to set up harhat.
 date: '2021-09-06'
 modified_date: '2021-09-06'
 image: /assets/images/posts/eth.jpg
-ytube: 'https://www.youtube.com/watch?v=gvsVUqnKnro'
+ytube: 'https://www.youtube.com/embed/gvsVUqnKnro'
 ---
 
 

@@ -53,7 +53,7 @@ const DisplayPost = (props: IPostProps) => (
         id={props.title}
         display="inline"
         position="relative"
-        sandbox="allow-same-origin"
+        sandbox="allow-same-origin allow-scripts allow-popups"
       />
     </Content>
   </Main>
